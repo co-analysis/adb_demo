@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+
+
+<title>Civil Service Statistics data browser (2022)</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="../lib/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet" />
+<script src="../lib/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="../lib/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="../lib/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
+<script src="../lib/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="../lib/navigation-1.1/tabsets.js"></script>
+<link href="../lib/highlightjs-9.12.0/default.css" rel="stylesheet" />
+<script src="../lib/highlightjs-9.12.0/highlight.js"></script>
+<script src="../lib/kePrint-0.0.1/kePrint.js"></script>
+<link href="../lib/lightable-0.0.1/lightable.css" rel="stylesheet" />
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
+
+<style type="text/css">code{white-space: pre;}</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+
+
+
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+details > summary > p:only-child {
+  display: inline;
+}
+pre code {
+  padding: 0;
+}
+</style>
+
+
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+
+
+<div id="header">
+
+
+
+
+</div>
+
+
+<div class="row">
+<div class="column left">
+<h1 class="title toc-ignore">Civil Service Statistics data browser (2022)</h1>
+</div>
+<div class="column right">
+<p><a href = https://www.gov.uk/government/statistics/civil-service-statistics-2022>Back to Civil Service Statistics</a></p>
+</div>
+</div>
+<div id="data-preview-all-civil-servants-disability" class="section level3">
+<h3>Data preview: <a href = ../index.html>All civil servants</a> / <a href = ../Disability/index.html>Disability</a></h3>
+<div id="explore-further-parent_department-organisation-responsibility_level_grouped-responsibility_level_ungrouped-region_london-region_itl1-region_itl2-region_itl3-profession_of_post-function_of_post-sex-ethnicity-sexual_orientation-age" class="section level4">
+<h4>Explore further: <a href = ./Parent_department/index.html>Parent_department</a>, <a href = ./Organisation/index.html>Organisation</a>, <a href = ./Responsibility_level_grouped/index.html>Responsibility_level_grouped</a>, <a href = ./Responsibility_level_ungrouped/index.html>Responsibility_level_ungrouped</a>, <a href = ./Region_london/index.html>Region_london</a>, <a href = ./Region_ITL1/index.html>Region_ITL1</a>, <a href = ./Region_ITL2/index.html>Region_ITL2</a>, <a href = ./Region_ITL3/index.html>Region_ITL3</a>, <a href = ./Profession_of_post/index.html>Profession_of_post</a>, <a href = ./Function_of_post/index.html>Function_of_post</a>, <a href = ./Sex/index.html>Sex</a>, <a href = ./Ethnicity/index.html>Ethnicity</a>, <a href = ./Sexual_orientation/index.html>Sexual_orientation</a>, <a href = ./Age/index.html>Age</a></h4>
+<div style="border: 1px solid #ddd; padding: 0px; overflow-y: scroll; height:350px; ">
+<table class="table table-striped table-condensed table-hover" style="margin-left: auto; margin-right: auto;">
+<thead>
+<tr>
+<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;">
+Status
+</th>
+<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;">
+Year
+</th>
+<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;">
+Disability
+</th>
+<th style="text-align:right;position: sticky; top:0; background-color: #FFFFFF;">
+Headcount
+</th>
+<th style="text-align:right;position: sticky; top:0; background-color: #FFFFFF;">
+FTE
+</th>
+<th style="text-align:right;position: sticky; top:0; background-color: #FFFFFF;">
+Mean_salary
+</th>
+<th style="text-align:right;position: sticky; top:0; background-color: #FFFFFF;">
+Median_salary
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+In post
+</td>
+<td style="text-align:left;">
+2022
+</td>
+<td style="text-align:left;">
+Declared disabled
+</td>
+<td style="text-align:right;">
+54615
+</td>
+<td style="text-align:right;">
+50140
+</td>
+<td style="text-align:right;">
+32320
+</td>
+<td style="text-align:right;">
+27570
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+In post
+</td>
+<td style="text-align:left;">
+2022
+</td>
+<td style="text-align:left;">
+Declared non-disabled
+</td>
+<td style="text-align:right;">
+334695
+</td>
+<td style="text-align:right;">
+313240
+</td>
+<td style="text-align:right;">
+34730
+</td>
+<td style="text-align:right;">
+30210
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+In post
+</td>
+<td style="text-align:left;">
+2022
+</td>
+<td style="text-align:left;">
+Undeclared
+</td>
+<td style="text-align:right;">
+27490
+</td>
+<td style="text-align:right;">
+25700
+</td>
+<td style="text-align:right;">
+33910
+</td>
+<td style="text-align:right;">
+31180
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+In post
+</td>
+<td style="text-align:left;">
+2022
+</td>
+<td style="text-align:left;">
+Unknown
+</td>
+<td style="text-align:right;">
+93280
+</td>
+<td style="text-align:right;">
+89005
+</td>
+<td style="text-align:right;">
+34970
+</td>
+<td style="text-align:right;">
+30680
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Leaver CS
+</td>
+<td style="text-align:left;">
+2022
+</td>
+<td style="text-align:left;">
+Declared disabled
+</td>
+<td style="text-align:right;">
+4475
+</td>
+<td style="text-align:right;">
+[c]
+</td>
+<td style="text-align:right;">
+30360
+</td>
+<td style="text-align:right;">
+27570
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Leaver CS
+</td>
+<td style="text-align:left;">
+2022
+</td>
+<td style="text-align:left;">
+Declared non-disabled
+</td>
+<td style="text-align:right;">
+26230
+</td>
+<td style="text-align:right;">
+[c]
+</td>
+<td style="text-align:right;">
+33370
+</td>
+<td style="text-align:right;">
+27570
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Leaver CS
+</td>
+<td style="text-align:left;">
+2022
+</td>
+<td style="text-align:left;">
+Undeclared
+</td>
+<td style="text-align:right;">
+2230
+</td>
+<td style="text-align:right;">
+[c]
+</td>
+<td style="text-align:right;">
+32510
+</td>
+<td style="text-align:right;">
+27570
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Leaver CS
+</td>
+<td style="text-align:left;">
+2022
+</td>
+<td style="text-align:left;">
+Unknown
+</td>
+<td style="text-align:right;">
+11280
+</td>
+<td style="text-align:right;">
+[c]
+</td>
+<td style="text-align:right;">
+34090
+</td>
+<td style="text-align:right;">
+27990
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Leaver Dept.
+</td>
+<td style="text-align:left;">
+2022
+</td>
+<td style="text-align:left;">
+Declared disabled
+</td>
+<td style="text-align:right;">
+1855
+</td>
+<td style="text-align:right;">
+[c]
+</td>
+<td style="text-align:right;">
+35690
+</td>
+<td style="text-align:right;">
+31060
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Leaver Dept.
+</td>
+<td style="text-align:left;">
+2022
+</td>
+<td style="text-align:left;">
+Declared non-disabled
+</td>
+<td style="text-align:right;">
+14415
+</td>
+<td style="text-align:right;">
+[c]
+</td>
+<td style="text-align:right;">
+38010
+</td>
+<td style="text-align:right;">
+32330
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Leaver Dept.
+</td>
+<td style="text-align:left;">
+2022
+</td>
+<td style="text-align:left;">
+Undeclared
+</td>
+<td style="text-align:right;">
+860
+</td>
+<td style="text-align:right;">
+[c]
+</td>
+<td style="text-align:right;">
+36180
+</td>
+<td style="text-align:right;">
+32540
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Leaver Dept.
+</td>
+<td style="text-align:left;">
+2022
+</td>
+<td style="text-align:left;">
+Unknown
+</td>
+<td style="text-align:right;">
+6525
+</td>
+<td style="text-align:right;">
+[c]
+</td>
+<td style="text-align:right;">
+41640
+</td>
+<td style="text-align:right;">
+34580
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+New entrant CS
+</td>
+<td style="text-align:left;">
+2022
+</td>
+<td style="text-align:left;">
+Declared disabled
+</td>
+<td style="text-align:right;">
+5225
+</td>
+<td style="text-align:right;">
+[c]
+</td>
+<td style="text-align:right;">
+29070
+</td>
+<td style="text-align:right;">
+27230
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+New entrant CS
+</td>
+<td style="text-align:left;">
+2022
+</td>
+<td style="text-align:left;">
+Declared non-disabled
+</td>
+<td style="text-align:right;">
+36910
+</td>
+<td style="text-align:right;">
+[c]
+</td>
+<td style="text-align:right;">
+29650
+</td>
+<td style="text-align:right;">
+26950
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+New entrant CS
+</td>
+<td style="text-align:left;">
+2022
+</td>
+<td style="text-align:left;">
+Undeclared
+</td>
+<td style="text-align:right;">
+1870
+</td>
+<td style="text-align:right;">
+[c]
+</td>
+<td style="text-align:right;">
+30020
+</td>
+<td style="text-align:right;">
+27570
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+New entrant CS
+</td>
+<td style="text-align:left;">
+2022
+</td>
+<td style="text-align:left;">
+Unknown
+</td>
+<td style="text-align:right;">
+25390
+</td>
+<td style="text-align:right;">
+[c]
+</td>
+<td style="text-align:right;">
+29770
+</td>
+<td style="text-align:right;">
+26590
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div id="download-the-data" class="section level4">
+<h4><a href="../Disability/data.csv">Download the data</a></h4>
+<p><strong>About:</strong> The Civil Service Statistics data browser is a pilot project by Cabinet Office to provide access to more detailed data on the Civil Service workforce from the Annual Civil Service Employment Survey. We welcome feedback or comments on this project, which can be addressed to <a href="mailto:civilservicestatistics@cabinetoffice.gov.uk?subject=ACSES%20data%20browser%20feedback">civilservicestatistics@cabinetoffice.gov.uk</a></p>
+<p><strong>Notes:</strong> Summary figures are suppressed when information relates to less than 5 civil servants for FTE or Headcount, and less than 10 civil servants for median and mean salary (shown as [c]). Zero responses and salaries for less than 30 civil servants have been suppressed for GPDR special category data. FTE figures are not shown for entrants or leavers due to data quality concerns for these groups. Figures are rounded to the nearest 5, or £10 as appropriate.</p>
+<p><strong>Data source:</strong> All figures are aggregated from the Cabinet Office <a href="https://www.gov.uk/government/collections/civil-service-statistics">Annual Civil Service Employment Survey</a> collection.</p>
+<p><strong>Version:</strong> Generated on 2023-02-14, with GIT 71a76ea.</p>
+<!-- **Data descriptions:** -->
+<table class="footnoteTable">
+<thead>
+<tr>
+<th style="text-align:left;">
+Data column
+</th>
+<th style="text-align:left;">
+Description
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+Status
+</td>
+<td style="text-align:left;">
+Employment status of the civil servants.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+In post - includes staff that were in post on the reference date (31 March).
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+New entrant CS - includes new entrants to the Civil Service over the year (1 April to 31 March).
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+Leaver CS - includes leavers from the Civil Service over the year (1 April to 31 March). This includes employees who have an Unknown leaving cause.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+Leaver Dept. - includes leavers from the department over the year (1 April to 31 March), who did not leave the Civil Service.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+Five organisations do not report when their employees first entered the Civil Service and so entrants data for these organisations is not available . These are as follows: Foreign Commonwealth and Development Office (excl. agencies), Foreign Commonwealth and Development Office Services, Defence Electronics and Components Agency, Scottish Forestry and Forest and Land Scotland. A further three organisations also could not provide entrants data in 2021. These are as follows: Department for International Development, Foreign and Commonwealth Office (excl. agencies) and Royal Fleet Auxiliary.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+Organisation specific notes on status: In late June 2021 around 7,000 employees from Community Rehabilitation Companies were transferred in from the private sector to HM Prison and Probation Service, counting as entrants. HM Land Registry do not record where their departing employees transfer to and so are unable to identify those that transfer to another Civil Service department.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Year
+</td>
+<td style="text-align:left;">
+Year of data collection (as at 31 March).
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Disability
+</td>
+<td style="text-align:left;">
+Self reported disability.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+“Undeclared” accounts for employees who have actively declared that they do not want to disclose their disability status and “Unknown” accounts for employees who have not made an active declaration about their disability status.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Headcount
+</td>
+<td style="text-align:left;">
+Total number of civil servants (rounded to nearest 5).
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+FTE
+</td>
+<td style="text-align:left;">
+Total full-time equivalent (FTE) employment numbers (rounded to nearest 5).
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+FTE figures are not shown for entrants or leavers due to data quality concerns for these groups.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Mean_salary
+</td>
+<td style="text-align:left;">
+Average salary (mean, rounded to nearest £10). For part-time employees, salaries represent the full-time equivalent earnings, while for full-time employees they are the actual annual gross salaries.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+These figures should be interpreted with caution when the total number of employees in a group is small, as they will tend to show more variability than larger groups (i.e. may be much higher or lower than can be explained by the data shown).
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Median_salary
+</td>
+<td style="text-align:left;">
+Median salary (rounded to nearest £10). For part-time employees, salaries represent the full-time equivalent earnings, while for full-time employees they are the actual annual gross salaries.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+These figures should be interpreted with caution when the total number of employees in a group is small, as they will tend to show more variability than larger groups (i.e. may be much higher or lower than can be explained by the data shown).
+</td>
+</tr>
+</tbody>
+</table>
+<style type="text/css">
+  .footnoteTable td {
+    padding-right: 30px;
+    vertical-align: top;
+  }
+
+.column {
+  float: left;
+}
+
+.left {
+  width: 80% !important;
+  padding-left: 15px;
+}
+
+.right {
+  width: 20% !important;
+  padding-right: 15px;
+  text-align: right;
+  padding-top: 20px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+</style>
+</div>
+</div>
+
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open');
+  });
+});
+</script>
+
+<!-- code folding -->
+
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>
